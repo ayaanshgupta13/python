@@ -36,6 +36,8 @@ def btnclicked(btn , pos):
                 first_btn=''
                 if r:
                     replay()
+                else:
+                    root.destroy()
             else:
                 messagebox.showwarning('','try again')
                 first_btn['text']=''

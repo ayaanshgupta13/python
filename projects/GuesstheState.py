@@ -68,6 +68,7 @@ def nextquest():
   hintlbl['text']=''
 
 
+
     
 ans = Entry(root,text='',width=15,font=('popins',12),textvariable=userans) # type: ignore
 hintbtn=Button(root,text='hint',width=10,bg='powderblue',fg='black',command=lambda:showhint())

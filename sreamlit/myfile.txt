@@ -1,0 +1,3 @@
+{'remark': 'amazon', 'amount': '100', 'date': datetime.date(2024, 11, 1)}
+{'remark': 'amazon', 'amount': '100', 'date': datetime.date(2024, 11, 1)}
+{'remark': '', 'amount': '', 'date': datetime.date(2024, 11, 30)}

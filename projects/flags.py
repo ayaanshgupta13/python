@@ -55,8 +55,8 @@ def btnClick():
         messagebox.showinfo('correct answer','you guessed it right')
         cf+=1
         break
-    else:
-      messagebox.showinfo('wrong answer','you guessed it wrong it is ' + ele)
+      else:
+        messagebox.showinfo('wrong answer','you guessed it wrong it is ' + ele)
   else:
     if v.lower() == ans.get().lower():
       messagebox.showinfo('correct answer','you guessed it right')

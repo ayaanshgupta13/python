@@ -54,7 +54,7 @@ class Student:
                 saveface(self)
 
         def saveface(self):
-                path = 'attendencesystem/student-images/'+str(self.name.get())
+                path = 'attendencesystem/student-images/'+str(self.name.get()+'_'+str(self.id.get()))
                 mode = 0o666
                 os.mkdir(path,mode)
                 cap = cv.VideoCapture(0)
@@ -65,7 +65,7 @@ class Student:
                           img_id+=1
 
                      face = cv.cvtColor(my_frame,cv.COLOR_BGR2GRAY)
-                     finalpath =  path + '/' + str(self.name.get()) + '-' + str(img_id)+'.jpg'
+                     finalpath =  path + '/' + str(self.name.get()) + '_' + str(img_id)+'.jpg'
                      cv.imwrite(finalpath, face)
                      cv.imshow(str(self.name.get()), face)
                      if cv.waitKey(1) == 13 or img_id == 100:

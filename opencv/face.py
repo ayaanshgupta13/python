@@ -14,7 +14,7 @@ while vedio.isOpened():
 
     cv2.imshow('video',frame)
 
-    if cv2.waitKey(1) & 0xff == ord('q'):
-        break
+    # if cv2.waitKey(1) & 0xff == ord('q'):
+    #     break
 
 vedio.release()
