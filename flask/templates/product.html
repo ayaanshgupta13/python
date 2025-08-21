@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ product.name }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background: #f5f5f5;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            margin-bottom: 10px;
+        }
+        .price {
+            font-size: 1.5em;
+            color: #007BFF;
+            font-weight: bold;
+            margin: 10px 0 20px;
+        }
+        .description {
+            line-height: 1.6;
+            color: #555;
+        }
+        a.back {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+        a.back:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>{{ product.name }}</h1>
+        <p class="price">${{ "%.2f" % product.price }}</p>
+        <p class="description">{{ product.description }}</p>
+        <a href="{{ url_for('index') }}" class="back">← Back to Products</a>
+    </div>
+</body>
+</html>
